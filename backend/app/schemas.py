@@ -13,6 +13,8 @@ class PageResult(BaseModel, Generic[T]):
     total: int
     page: int = 1
     size: int = 20
+    pages: int = 1
+    locate_id: int | None = None
 
 
 class ActionResult(BaseModel):
